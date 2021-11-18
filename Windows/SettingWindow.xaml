@@ -1,0 +1,43 @@
+﻿<Window x:Name="settingForm" x:Class="OmniusAccruals.Windows.SettingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OmniusAccruals.Windows"
+        mc:Ignorable="d"
+        Title="SettingWindow" Height="681" Width="578.5" Loaded="settingForm_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closing="settingForm_Closing">
+    <Grid>
+        <GroupBox Header="DATABASE&#xD;&#xA;" Margin="10,10,13,374"/>
+        <TextBox x:Name="txtHost" Height="30" Margin="169,40,20,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" BorderBrush="#FF007CFF"/>
+        <Label Content="Host" HorizontalAlignment="Left" Margin="22,40,0,0" VerticalAlignment="Top" Width="147" Height="30"/>
+        <TextBox x:Name="txtDB" Height="30" Margin="169,84,20,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" BorderBrush="#FF007CFF"/>
+        <Label Content="Base" HorizontalAlignment="Left" Margin="22,84,0,0" VerticalAlignment="Top" Width="147" Height="30"/>
+        <TextBox x:Name="txtTRUSTED" Height="30" Margin="169,128,20,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" BorderBrush="#FF007CFF"/>
+        <Label Content="TRUSTED" HorizontalAlignment="Left" Margin="22,128,0,0" VerticalAlignment="Top" Width="147" Height="30"/>
+        <TextBox x:Name="txtUser" Height="30" Margin="169,174,20,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" BorderBrush="#FF007CFF"/>
+        <Label Content="User" HorizontalAlignment="Left" Margin="22,174,0,0" VerticalAlignment="Top" Width="147" Height="30"/>
+
+        <PasswordBox x:Name="txtPassword" Margin="169,218,20,0" VerticalAlignment="Top" Height="30" FontSize="18" BorderBrush="#FF007CFF"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="22,218,0,0" VerticalAlignment="Top" Width="147" Height="30"/>
+
+        <GroupBox Header="SMTP" Height="253" Margin="10,278,13,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSMTPHost" Height="30" Margin="165,303,24,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" BorderBrush="#FF007CFF"/>
+        <Label Content="Host" HorizontalAlignment="Left" Margin="27,303,0,0" VerticalAlignment="Top" Width="138" FontSize="14" Height="30"/>
+
+        <TextBox x:Name="txtSMTPPort" Height="30" Margin="165,347,24,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" BorderBrush="#FF007CFF"/>
+        <Label Content="Port" HorizontalAlignment="Left" Margin="27,347,0,0" VerticalAlignment="Top" Width="138" FontSize="14" Height="30"/>
+
+        <TextBox x:Name="txtSMTPUser" Height="30" Margin="165,392,24,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" BorderBrush="#FF007CFF"/>
+        <Label Content="User" HorizontalAlignment="Left" Margin="27,392,0,0" VerticalAlignment="Top" Width="138" FontSize="14" Height="30"/>
+
+        <PasswordBox x:Name="txtSMTPPassword" Margin="165,439,24,0" VerticalAlignment="Top" Height="30" FontSize="18" BorderBrush="#FF007CFF"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="27,439,0,0" VerticalAlignment="Top" Width="138" FontSize="14" Height="30"/>
+
+        <TextBox x:Name="txtSMTPRECEIVER" Height="30" Margin="165,487,24,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" BorderBrush="#FF007CFF"/>
+        <Label Content="Preceiver file" HorizontalAlignment="Left" Margin="27,487,0,0" VerticalAlignment="Top" Width="138" FontSize="14" Height="30"/>
+        <TextBlock x:Name="txtBlockRelease" HorizontalAlignment="Left" Margin="10,608,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.224,0.094" Width="552" Height="34"/>
+        <CheckBox x:Name="isFormateUTF8"  Content="Использовать UTF-8 при экспорте данных в файл" HorizontalAlignment="Left" Margin="27,555,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.042,0.667" Width="293" FontSize="14" Height="20"/>
+        <Button x:Name="btnOk" Content="OK" Margin="0,0,37,67" Click="btnOk_Click" IsDefault="True" HorizontalAlignment="Right" Width="85" Height="30" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>

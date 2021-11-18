@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmniusAccruals", "OmniusAccruals.csproj", "{4C2EC4EA-0622-4CE3-AC9E-13CB295E7806}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C2EC4EA-0622-4CE3-AC9E-13CB295E7806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C2EC4EA-0622-4CE3-AC9E-13CB295E7806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C2EC4EA-0622-4CE3-AC9E-13CB295E7806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C2EC4EA-0622-4CE3-AC9E-13CB295E7806}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {612DEC36-65E3-4D5D-AC76-371409A2990D}
+	EndGlobalSection
+EndGlobal

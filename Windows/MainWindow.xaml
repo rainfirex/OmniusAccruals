@@ -1,0 +1,35 @@
+﻿<Window x:Name="mainForm" x:Class="OmniusAccruals.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OmniusAccruals.Windows"
+        mc:Ignorable="d"
+        Title="ЮР начисления" Height="286" Width="492.07" Loaded="mainForm_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closing="mainForm_Closing">
+    <Grid>
+
+        <Grid x:Name="___Grid__Menu" Height="30" Margin="0" VerticalAlignment="Top">
+            <DockPanel>
+                <Menu DockPanel.Dock="Top" Margin="0,-3,0,0" Height="30" VerticalAlignment="Top" FontSize="14" Background="#FFFBF9F9" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}">
+                    <MenuItem Header="Настройка" Height="31" Click="btnSetting_Click"/>
+                </Menu>
+            </DockPanel>
+        </Grid>
+
+        <ListBox x:Name="listDivisions" HorizontalAlignment="Left" Height="180" Margin="10,56,0,0" VerticalAlignment="Top" Width="232" BorderBrush="#FF007CFF"/>
+
+        <Button x:Name="btnGet" Content="Подготовить данные" HorizontalAlignment="Left" Margin="288,150,0,0" VerticalAlignment="Top" Width="140" Height="45" Click="btnGetDivisions_Click" BorderBrush="#FF007CFF"/>
+        <DatePicker x:Name="pickerPeriod" HorizontalAlignment="Left" Margin="271,102,0,0" VerticalAlignment="Top" Width="179" FontSize="16">
+            <DatePicker.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+                    <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                    <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                    <GradientStop Color="#FF718597" Offset="0.262"/>
+                    <GradientStop Color="#FF007CFF" Offset="1"/>
+                </LinearGradientBrush>
+            </DatePicker.BorderBrush>
+        </DatePicker>
+        <TextBlock HorizontalAlignment="Left" Margin="10,35,0,0" TextWrapping="Wrap" Text="Отделения" VerticalAlignment="Top" Width="232"/>
+        <TextBlock HorizontalAlignment="Left" Margin="271,75,0,0" TextWrapping="Wrap" Text="Период (без учета дня)" VerticalAlignment="Top" Width="179" Height="20"/>
+    </Grid>
+</Window>
